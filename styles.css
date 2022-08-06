@@ -1,0 +1,293 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+:root {
+	--main-white: #f0f0f0;
+    --main-red:#d3383c;
+    --main-brown:#352520;
+    --main-veige:#ded6bf;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70%;
+    color: var(--main-white);
+}
+.header-bar {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: var(--main-red);
+    box-shadow: 0 3px 0 rgb(0 0 0 / 40%);
+}
+.logo-div {
+    padding: 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:15px;
+    padding-right: 20px;
+
+}
+.nav-menu, a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--main-white);
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.4s;
+}
+p {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+h1, h2 {
+    font-size:4em;
+    font-weight: 800;
+}
+hr {
+    width: 6rem;
+    border: 2px solid white;
+}
+.principal-box-one p {
+    padding: 0 2em;
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.principal-box-one {
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://www.dropbox.com/s/mjhoy5cxlsk9n4c/Fondo1.jpg?raw=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 1;
+    height: 663px;
+}
+.principal-box-two h1, .principal-box-three h1, .principal-box-six h1, .principal-box-seven h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.principal-box-two {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: var(--main-veige);
+    color: var(--main-red);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding:10em;
+    justify-content: center;
+    min-height: 250px;
+}
+.principal-box-three {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: var(--main-red);
+    color: var(--main-veige);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 300px;
+    padding:10em;
+    justify-content: center;
+}
+.principal-box-four {
+    grid-column: 1 / 3;
+    grid-row:3;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    background-image: url(https://www.dropbox.com/s/1comi2x0fvc2r41/Fondo2.jpg?raw=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.principal-box-six {
+    grid-column: 1;
+    grid-row: 5;
+    background-color: var(--main-red);
+    color: var(--main-veige);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 300px;
+    padding:10em;
+    justify-content: center;
+}
+
+.principal-box-seven {
+    grid-column: 2;
+    grid-row: 5;
+    background-color: var(--main-veige);
+    color: var(--main-red);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 300px;
+    padding:10em;
+    justify-content: center;
+}
+.show-more {
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 1em;
+    transition: background-color 0.4s;
+}
+.principal-box-five {
+    grid-column: 1 / 3;
+    grid-row:4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem;
+    color:var(--main-brown);
+    gap:30px
+}
+.icon-box {
+    display:flex;
+    gap:10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.icon-box img {
+    max-width:70%;
+    max-height:70%;
+}
+.icon-box h3 {
+    font-size: 2em;
+}
+.text-box h3, .text-box p {
+    margin:0px;
+    text-align: left;
+}
+
+/* footer */
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 3rem;
+    padding-right: 0.5rem;
+    background: var(--main-brown);
+    border-top: 4px solid black;
+    font-size: 0.5rem;
+    font-weight: 200;
+    font-style: italic;
+    color:var(--main-white);
+}
+.flex-center-bottom {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+.flex-item-center {
+    flex: 0 1 auto;
+    align-self: center;
+    order: 0;
+}
+/* toggle-nav */
+
+.nav-toggle {
+    background: none;
+    color:var(--main-white);
+    border: none;
+    font-size: 4em;
+    padding: 0 2em;
+    line-height: 60px;
+    margin-right: 20px;
+    display:none;
+    margin: 0px;
+}
+/* hover */
+
+.nav-menu a:hover {
+    color: var(--main-brown);
+}
+.principal-box-four a:hover{
+    background-color: var(--main-red);
+}
+
+/* media query */
+
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 60%;
+    }
+    /* .nav-bar {display: none;
+    } */
+    .nav-toggle {
+        display: inline;
+        padding: 0px;
+        cursor: pointer;
+    }
+    .header-bar {
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav-menu {
+    flex-direction: column;
+    position: fixed;
+    background-color: var(--main-brown);
+    color: var(--main-red);
+    left:100%;
+    top:77px;
+    margin:0px;
+    width: 100%;
+    justify-content: center;
+    padding:20px 0px 350px 0px;
+    gap: 50px;
+    transition: left 0.5s;
+    }
+    .nav-menu_visible {
+        left: 0;
+    }
+}
+@media only screen and (max-width: 685px) {
+
+    .main-grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .principal-box-five {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .icon-box {
+        display:inline;
+    }
+    .icon-box img {
+        max-width:30%;
+        max-height:30%;
+    }
+    .principal-box-two, .principal-box-three, .principal-box-six, .principal-box-seven, footer {
+        padding: 0px;
+    }
+}
